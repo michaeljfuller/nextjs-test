@@ -10,7 +10,6 @@ export const discordAuthorizationUrl = `https://discord.com/api/oauth2/authorize
 ].join('%20')}`
 
 export const discordProfileCallback: OAuthConfig<DiscordProfile>['profile'] = async (profile, tokens) => {
-    console.log(`Auth Discord profile:`, profile)
     return profile
 }
 
